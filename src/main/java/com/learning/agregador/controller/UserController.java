@@ -1,5 +1,6 @@
 package com.learning.agregador.controller;
 
+import com.learning.agregador.controller.dto.CreateUserDTO;
 import com.learning.agregador.entity.User;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -9,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
 
     @PostMapping
-    public ResponseEntity<User> createUser(@RequestBody String body) {
+    public ResponseEntity<User> createUser(@RequestBody CreateUserDTO createUserDTO) {
         //
         return null;
     }
